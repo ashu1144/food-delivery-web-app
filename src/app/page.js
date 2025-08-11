@@ -44,7 +44,7 @@ export default function Home() {
   //  }, [resturantsName])
    
    async function getRestaurants(foodItems){
-    let response = await fetch(`/api/user/homeFetch/${foodItems}`, {method:"GET"})
+    let response = await fetch(`https://food-delivery-web-app-teal.vercel.app/api/user/homeFetch/${foodItems}`, {method:"GET"})
     response = await response.json()
     const{data} = response
     setrestaurantNames((prev)=>({
