@@ -69,7 +69,7 @@ function CustomerSignUp() {
       return setError("enter valid contact");
     }
     setError("")
-    let response = await fetch("http://localhost:3000/api/user",
+    let response = await fetch("/api/user",
       {method:"POST" , body:JSON.stringify(userData)})
       response = await response.json()
       if(response.success){ 

@@ -38,7 +38,7 @@ function UploadFood() {
 
         console.log(foodData)
         if(foodData.resto_id){
-            let data = await fetch("http://localhost:3000/api/restaurant/foods",{method:"POST", body:JSON.stringify(foodData)})
+            let data = await fetch("/api/restaurant/foods",{method:"POST", body:JSON.stringify(foodData)})
             let response = await data.json()
             if(response.success){
                 alert(response.message)

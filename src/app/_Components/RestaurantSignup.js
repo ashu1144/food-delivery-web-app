@@ -69,7 +69,7 @@ function RestaurantSignUp() {
       return setError("enter valid contact");
     }
     setError("")
-    let response = await fetch("http://localhost:3000/api/restaurant",
+    let response = await fetch("/api/restaurant",
       {method:"POST" , body:JSON.stringify(userData)})
       response = await response.json()
       if(response.success){ 

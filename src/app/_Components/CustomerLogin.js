@@ -23,7 +23,7 @@ function CustomerLogin() {
     const handelSubmit=async(e)=>{
       e.preventDefault()
       console.log(userData)
-      let response = await fetch("http://localhost:3000/api/user" ,{method:"POST" , body:JSON.stringify({userData , login:true})} )
+      let response = await fetch("/api/user" ,{method:"POST" , body:JSON.stringify({userData , login:true})} )
       response = await response.json() 
       if(response.success){
         alert("login successfully")
