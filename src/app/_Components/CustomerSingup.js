@@ -89,14 +89,14 @@ function CustomerSignUp() {
 
   return (
     <div className="">
-      <div className="relative w-80 h-120 border-2 p-5 m-auto  ">
+      <div className="relative w-80 h-120 border-2 p-5 m-auto rounded-2xl border-zinc-800  ease-in-out transition-all shadow-[5px_8px_20px] hover:shadow-[5px_8px_25px] duration-500 bg-amber-300 ">
         <h1 className="">SignUp</h1>
         <form
           onSubmit={handelSubmit}
           className=" absolute bottom-9 left-1/5 flex flex-col gap-5"
         >
           <input
-            className="border-2 w-50"
+            className="border-2 w-50 pl-2 rounded-2xl"
             placeholder="Enter Your Name "
             name="name"
             required
@@ -106,17 +106,17 @@ function CustomerSignUp() {
             }}
           ></input>
           <input
-            className="border-2 w-50 "
+            className="border-2 w-50 pl-2 rounded-2xl"
             name="email"
              required
             value={userData.email}
-            placeholder="Enter Your Email "
+            placeholder="Enter Your Email  "
             onChange={(e) => {
               handelFormInput(e);
             }}
           ></input>
           <input
-            className="border-2 w-50"
+            className="border-2 w-50 pl-2 rounded-2xl"
             name="password"
             type="password"
              required
@@ -128,7 +128,7 @@ function CustomerSignUp() {
             }}
           ></input>
           <input
-            className="border-2 w-50 "
+            className="border-2 w-50 pl-2 rounded-2xl "
             name="c_password"
             type="password"
              required
@@ -140,7 +140,7 @@ function CustomerSignUp() {
             }}
           ></input>
           <input
-            className="w-50 border-2 "
+            className="w-50 border-2 pl-2 rounded-2xl "
             name="city"
              required
             autoComplete="off"
@@ -151,7 +151,7 @@ function CustomerSignUp() {
             }}
           ></input>
           <input
-            className="w-50 border-2"
+            className="w-50 border-2 pl-2 rounded-2xl"
             name="contact"
             type="tel"
             required
@@ -163,7 +163,7 @@ function CustomerSignUp() {
             }}
           ></input>
           <input
-            className="w-50 border-2"
+            className="w-50 border-2 pl-2 rounded-2xl"
             name="img_path"
             autoComplete="off"
             value={userData.img_path}

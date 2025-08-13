@@ -4,14 +4,14 @@ import { useState } from "react";
 import CustomerLogin from "../_Components/CustomerLogin";
 import CustomerSignUp from "../_Components/CustomerSingup";
 import CustomerHeader from "../_Components/CustomerHeader";
+
 function Restaurant() {
   const [login, setLogin] = useState(true);
 
   return (
     <div className="h-[100vh]">
       <CustomerHeader></CustomerHeader>
-    <div className="h-[95vh] flex flex-col items-center gap-2 justify-center">
-      <h1> user login/singup</h1>
+    <div style={{ backgroundImage: `url('/background.jpg')` }} className="h-[91.8vh] flex flex-col items-center gap-2 justify-center bg-cover">
       <div className="">
         {login ? (
           <CustomerLogin></CustomerLogin>
